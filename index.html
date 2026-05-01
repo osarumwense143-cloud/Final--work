@@ -1,18 +1,307 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>250LT PHYSICS MEMORIES</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>250LT Physics Department</title>
+
 <style>
-.bus{
-  text-align:center;
-  font-family:arial;
-  font-size:24px;
-  color:blue;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #020617, #0f172a);
+}
+
+.hero h1 {
+  font-size: 32px;
+  color: #38bdf8;
+}
+
+.hero p {
+  color: #ccc;
+}
+
+/* SECTION TITLE */
+h2 {
+  text-align: center;
+  color: #38bdf8;
+  margin-top: 40px;
+}
+
+/* CARD */
+.card {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 320px;
+  background: #1e293b;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-photo-wide {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.rep-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.caption {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery-item {
+  background: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.gallery-item img,
+.gallery-item video {
+  width: 100%;
+  display: block;
+}
+
+.tag {
+  background: #1a237e;
+  padding: 6px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.gallery-item h4 {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
 }
 </style>
 </head>
+
 <body>
-  <h1 class="bus">250LT PHYSICS MEMORIES</h1>
-  <p class="bus">Course Rep: OMOREGIE</p>
+
+<div class="hero">
+  <h1>250LT Physics Department</h1>
+  <p>Moments • Leadership • Legacy</p>
+</div>
+
+<h2>Course Representatives 2026</h2>
+
+<div class="card">
+  <img src="gcr.jpg" class="card-photo-wide">
+  <h3>General Class Representative</h3>
+  <p class="rep-name">Favour Osaugwe Ehichioya</p>
+  <p class="caption">The voice of the class — leadership, structure, and results.</p>
+</div>
+
+<div class="card">
+  <img src="k.jpg" class="card-photo">
+  <h3>Pure Physics Rep</h3>
+  <p class="rep-name">Kovar Isaiah Miracle</p>
+  <p class="caption">Focused mind, sharp thinking — representing the core of physics.</p>
+</div>
+
+<div class="card">
+  <img src="L.jpg" class="card-photo-wide">
+  <h3>Geophysics Rep</h3>
+  <p class="rep-name">Latoya Aigbe</p>
+  <p class="caption">Grounded and reliable — bridging earth and science.</p>
+</div>
+
+<div class="card">
+  <img src="osarumwense.jpg" class="card-photo">
+  <h3>Industrial Physics Rep</h3>
+  <p class="rep-name">Omoruyi Kelvin Osarumwense</p>
+  <p class="caption">Innovation meets execution — turning ideas into real impact.</p>
+</div>
+
+<div class="card">
+  <img src="A.jpg" class="card-photo">
+  <h3>Assistant Rep</h3>
+  <p class="rep-name">Naiomi</p>
+  <p class="caption">Support system on lock — ensuring everything runs smoothly.</p>
+</div>
+
+<h2>Best Moments Gallery</h2>
+
+<div class="gallery">
+
+<div class="gallery-item">
+<img src="M1.jpg">
+<div class="tag">MATRIC</div>
+<h4>The beginning of greatness </h4>
+</div>
+
+<div class="gallery-item">
+<img src="M2.jpg">
+<div class="tag">CLASS</div>
+<h4>Brains in action </h4>
+</div>
+
+<div class="gallery-item">
+<img src="w.jpg">
+<div class="tag">MATRIC</div>
+<h4>Officially part of the system </h4>
+</div>
+
+<div class="gallery-item">
+<img src="f.jpg">
+<div class="tag">CELEBRATION</div>
+<h4>Work hard, celebrate harder </h4>
+</div>
+
+<div class="gallery-item">
+<video controls>
+<source src="4.mp4" type="video/mp4">
+</video>
+<div class="tag">MATRIC</div>
+<h4>Moments we’ll never forget </h4>
+</div>
+
+<div class="gallery-item">
+<img src="ball.jpg">
+<div class="tag">FOOTBALL</div>
+<h4>Physics vs Everybody </h4>
+</div>
+
+<div class="gallery-item">
+<img src="9.jpg">
+<div class="tag">MATCH DAY</div>
+<h4>Game faces on </h4>
+</div>
+
+<div class="gallery-item">
+<video controls>
+<source src="42.mp4" type="video/mp4">
+</video>
+<div class="tag">VICTORY</div>
+<h4>5-2 — no debates </h4>
+</div>
+
+<div class="gallery-item">
+<img src="11.jpg">
+<div class="tag">PICNIC</div>
+<h4>Soft life activated </h4>
+</div>
+
+<div class="gallery-item">
+<img src="pi.jpg">
+<div class="tag">FRESH-GUYS</div>
+<h4>Fresh vibes </h4>
+</div>
+
+<div class="gallery-item">
+<video controls>
+<source src="video.mp4" type="video/mp4">
+</video>
+<div class="tag">PICNIC</div>
+<h4>Pure enjoyment </h4>
+</div>
+
+<div class="gallery-item">
+<img src="practical.jpg">
+<div class="tag">LAB</div>
+<h4>Serious work mode </h4>
+</div>
+
+<div class="gallery-item">
+<video controls>
+<source src="48.mp4" type="video/mp4">
+</video>
+<div class="tag">AFTER CLASS</div>
+<h4>Survived CHM 107 </h4>
+</div>
+
+<div class="gallery-item">
+<img src="20.jpg">
+<div class="tag">250LT</div>
+<h4>Memories that matter </h4>
+</div>
+
+<div class="gallery-item">
+<video controls>
+<source src="c.mp4" type="video/mp4">
+</video>
+<div class="tag">FUNNY</div>
+<h4>Too much cruise </h4>
+</div>
+
+<div class="gallery-item">
+<img src="d.jpg">
+<div class="tag">WAWBEATS WITH THE  REPS</div>
+<h4>Leadership circle </h4>
+</div>
+
+<div class="gallery-item">
+<img src="50.jpg">
+<div class="tag">AURA</div>
+<h4>Confidence on 100 </h4>
+</div>
+
+<div class="gallery-item">
+<img src="81.png">
+<div class="tag">CAPACITY</div>
+<h4>Built different </h4>
+</div>
+
+<div class="gallery-item">
+<video controls>
+<source src="v.mp4" type="video/mp4">
+</video>
+<div class="tag">FUN</div>
+<h4>No dull moments </h4>
+</div>
+
+</div>
+
+<div class="footer">
+Built with  by Osarumwense Omoruyi Kelvin | 2026
+</div>
+
 </body>
-</html>
+  </html>
