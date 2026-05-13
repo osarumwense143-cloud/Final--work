@@ -1,171 +1,380 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>250LT Physics Department</title>
+<title>250LT Physics Academic Hub</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #0f172a;
-  color: white;
+
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:#0f172a;
+color:white;
 }
 
 /* HERO */
-.hero {
-  text-align: center;
-  padding: 50px 20px;
-  background: linear-gradient(to right, #020617, #0f172a);
+
+.hero{
+text-align:center;
+padding:50px 20px;
+background:linear-gradient(to right,#020617,#0f172a);
 }
 
-.hero h1 {
-  font-size: 32px;
-  color: #38bdf8;
+.hero h1{
+font-size:32px;
+color:#38bdf8;
 }
 
-.hero p {
-  color: #ccc;
+.hero p{
+color:#ccc;
 }
 
 /* SECTION TITLE */
-h2 {
-  text-align: center;
-  color: #38bdf8;
-  margin-top: 40px;
+
+h2{
+text-align:center;
+color:#38bdf8;
+margin-top:40px;
+}
+
+/* SEARCH */
+
+.search-box{
+padding:20px;
+}
+
+.search-box input{
+width:100%;
+padding:14px;
+border:none;
+border-radius:10px;
+background:#1e293b;
+color:white;
+font-size:16px;
+outline:none;
 }
 
 /* CARD */
-.card {
-  text-align: center;
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 320px;
-  background: #1e293b;
-  border-radius: 15px;
-  transition: 0.3s;
+
+.card{
+text-align:center;
+margin:20px auto;
+padding:20px;
+max-width:320px;
+background:#1e293b;
+border-radius:15px;
+transition:0.3s;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.card:hover{
+transform:translateY(-5px);
 }
 
-.card-photo {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
+.card-photo{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
 }
 
-.card-photo-wide {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
+.card-photo-wide{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
 }
 
-.rep-name {
-  font-weight: bold;
-  margin-top: 10px;
+.rep-name{
+font-weight:bold;
+margin-top:10px;
 }
 
-.caption {
-  font-size: 13px;
-  color: #94a3b8;
+.caption{
+font-size:13px;
+color:#94a3b8;
 }
 
 /* GALLERY */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-  padding: 20px;
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+padding:20px;
 }
 
-.gallery-item {
-  background: #1e293b;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: 0.3s;
+.gallery-item{
+background:#1e293b;
+border-radius:12px;
+overflow:hidden;
+transition:0.3s;
 }
 
-.gallery-item:hover {
-  transform: scale(1.03);
+.gallery-item:hover{
+transform:scale(1.03);
 }
 
 .gallery-item img,
-.gallery-item video {
-  width: 100%;
-  display: block;
+.gallery-item video{
+width:100%;
+display:block;
 }
 
-.tag {
-  background: #1a237e;
-  padding: 6px;
-  text-align: center;
-  font-size: 12px;
+.tag{
+background:#1a237e;
+padding:6px;
+text-align:center;
+font-size:12px;
 }
 
-.gallery-item h4 {
-  text-align: center;
-  padding: 10px;
-  margin: 0;
-  font-size: 14px;
+.gallery-item h4{
+text-align:center;
+padding:10px;
+margin:0;
+font-size:14px;
+}
+
+/* MATERIAL BOX */
+
+.material-box{
+padding:15px;
+}
+
+.material-box ul{
+text-align:left;
+line-height:1.8;
+padding-left:20px;
+}
+
+.material-box a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+.material-box a:hover{
+text-decoration:underline;
 }
 
 /* FOOTER */
-.footer {
-  text-align: center;
-  padding: 20px;
-  color: #aaa;
+
+.footer{
+text-align:center;
+padding:20px;
+color:#aaa;
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- HERO -->
+
 <div class="hero">
-  <h1>250LT Physics Department</h1>
-  <p>Moments • Leadership • Legacy</p>
+<h1>250LT Physics Academic Hub</h1>
+<p>Leadership • Academics • Memories</p>
 </div>
+
+<!-- SEARCH -->
+
+<h2>🔍 Search Student Hub</h2>
+
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="Search materials, reps, gallery...">
+</div>
+
+<!-- ACADEMIC HUB -->
+
+<h2>📚 Academic Practice Hub</h2>
+
+<div class="gallery">
+
+<!-- PHY -->
+
+<div class="gallery-item">
+<div class="material-box">
+
+<h3>PHY 102 Practice</h3>
+
+<p>Electricity • Waves • Circuits</p>
+
+<ul>
+
+<li>
+<a href="#" onclick="showPHY()">
+PHY 102 Practice Questions
+</a>
+</li>
+
+<li>
+<a href="#" onclick="showPHYNotes()">
+Electric Circuit Revision Notes
+</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+
+<!-- MTH -->
+
+<div class="gallery-item">
+<div class="material-box">
+
+<h3>MTH 102 Practice</h3>
+
+<p>Calculus • Differentiation • Integration</p>
+
+<ul>
+
+<li>
+<a href="#" onclick="showMTH()">
+MTH 102 Practice Questions
+</a>
+</li>
+
+<li>
+<a href="#" onclick="showMTHNotes()">
+Differentiation Formula Guide
+</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+
+<!-- GST -->
+
+<div class="gallery-item">
+<div class="material-box">
+
+<h3>GST 102 Practice</h3>
+
+<p>Communication Skills</p>
+
+<ul>
+
+<li>
+<a href="#" onclick="showGST()">
+GST 102 Likely Questions
+</a>
+</li>
+
+<li>
+<a href="#" onclick="showGSTNotes()">
+Essay Writing Tips
+</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+
+<!-- CHM -->
+
+<div class="gallery-item">
+<div class="material-box">
+
+<h3>CHM 102 Practice</h3>
+
+<p>Basic Chemistry</p>
+
+<ul>
+
+<li>
+<a href="#" onclick="showCHM()">
+CHM 102 Practice Questions
+</a>
+</li>
+
+<li>
+<a href="#" onclick="showCHMNotes()">
+Chemical Bonding Notes
+</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+
+</div>
+
+<!-- WEEKLY FOCUS -->
+
+<h2>🔥 Weekly Academic Focus</h2>
+
+<div class="card">
+
+<h3>This Week Focus</h3>
+
+<p class="caption">
+
+PHY 102 → Circuits and calculations<br><br>
+
+MTH 102 → Practice differentiation daily<br><br>
+
+CHM 102 → Bonding and balancing equations
+
+</p>
+
+</div>
+
+<!-- COURSE REPS -->
 
 <h2>Course Representatives 2026</h2>
 
 <div class="card">
-  <img src="Gcr.jpg" class="card-photo-wide">
-  <h3>General Class Representative</h3>
-  <p class="rep-name">Favour Osaugwe Ehichioya</p>
-  <p class="caption">The voice of the class — leadership, structure, and results.</p>
+<img src="Gcr.jpg" class="card-photo-wide">
+<h3>General Class Representative</h3>
+<p class="rep-name">Favour Osaugwe Ehichioya</p>
+<p class="caption">
+The voice of the class — leadership, structure, and results.
+</p>
 </div>
 
 <div class="card">
-  <img src="K.jpg" class="card-photo">
-  <h3>Pure Physics Rep</h3>
-  <p class="rep-name">Kovar Isaiah Miracle</p>
-  <p class="caption">Focused mind, sharp thinking — representing the core of physics.</p>
+<img src="K.jpg" class="card-photo">
+<h3>Pure Physics Rep</h3>
+<p class="rep-name">Kovar Isaiah Miracle</p>
+<p class="caption">
+Focused mind, sharp thinking — representing the core of physics.
+</p>
 </div>
 
 <div class="card">
-  <img src="L.jpg" class="card-photo-wide">
-  <h3>Geophysics Rep</h3>
-  <p class="rep-name">Latoya Aigbe</p>
-  <p class="caption">Grounded and reliable — bridging earth and science.</p>
+<img src="L.jpg" class="card-photo-wide">
+<h3>Geophysics Rep</h3>
+<p class="rep-name">Latoya Aigbe</p>
+<p class="caption">
+Grounded and reliable — bridging earth and science.
+</p>
 </div>
 
 <div class="card">
-  <img src="Osarumwense.jpg" class="card-photo">
-  <h3>Industrial Physics Rep</h3>
-  <p class="rep-name">Omoruyi Kelvin Osarumwense</p>
-  <p class="caption">Innovation meets execution — turning ideas into real impact.</p>
+<img src="Osarumwense.jpg" class="card-photo">
+<h3>Industrial Physics Rep</h3>
+<p class="rep-name">Omoruyi Kelvin Osarumwense</p>
+<p class="caption">
+Innovation meets execution — turning ideas into real impact.
+</p>
 </div>
 
 <div class="card">
-  <img src="a.jpg" class="card-photo">
-  <h3>Assistant Rep</h3>
-  <p class="rep-name">Naiomi</p>
-  <p class="caption">Support system on lock — ensuring everything runs smoothly.</p>
+<img src="a.jpg" class="card-photo">
+<h3>Assistant Rep</h3>
+<p class="rep-name">Naiomi</p>
+<p class="caption">
+Support system on lock — ensuring everything runs smoothly.
+</p>
 </div>
+
+<!-- GALLERY -->
 
 <h2>Best Moments Gallery</h2>
 
@@ -174,119 +383,132 @@ h2 {
 <div class="gallery-item">
 <img src="M1.jpg">
 <div class="tag">MATRIC</div>
-<h4>The beginning of greatness </h4>
+<h4>The beginning of greatness</h4>
 </div>
 
 <div class="gallery-item">
 <img src="M2.jpg">
 <div class="tag">CLASS</div>
-<h4>Brains in action </h4>
+<h4>Brains in action</h4>
 </div>
 
 <div class="gallery-item">
 <img src="W.jpg">
 <div class="tag">MATRIC</div>
-<h4>Officially part of the system </h4>
+<h4>Officially part of the system</h4>
 </div>
 
 <div class="gallery-item">
 <img src="F.jpg">
 <div class="tag">CELEBRATION</div>
-<h4>Work hard, celebrate harder </h4>
+<h4>Work hard, celebrate harder</h4>
 </div>
-
 
 <div class="gallery-item">
 <img src="Ball.jpg">
 <div class="tag">FOOTBALL</div>
-<h4>Physics vs Everybody </h4>
+<h4>Physics vs Everybody</h4>
 </div>
 
 <div class="gallery-item">
 <img src="9.jpg">
 <div class="tag">MATCH DAY</div>
-<h4>Game faces on </h4>
-</div>
-
-<div class="gallery-item">
-<video controls>
-<source src="42.mp4" type="video/mp4">
-</video>
-<div class="tag">VICTORY</div>
-<h4>5-2 — no debates </h4>
-</div>
-
-<div class="gallery-item">
-<img src="11.jpg">
-<div class="tag">PICNIC</div>
-<h4>Soft life activated </h4>
-</div>
-
-<div class="gallery-item">
-<img src="Pi.jpg">
-<div class="tag">FRESH-GUYS</div>
-<h4>Fresh vibes </h4>
-</div>
-
-<div class="gallery-item">
-<video controls>
-<source src="Video.mp4" type="video/mp4">
-</video>
-<div class="tag">PICNIC</div>
-<h4>Pure enjoyment </h4>
-</div>
-
-<div class="gallery-item">
-<img src="Practical.jpg">
-<div class="tag">LAB</div>
-<h4>Serious work mode </h4>
-</div>
-
-<div class="gallery-item">
-<video controls>
-<source src="48.mp4" type="video/mp4">
-</video>
-<div class="tag">AFTER CLASS</div>
-<h4>Survived CHM 107 </h4>
-</div>
-
-<div class="gallery-item">
-<img src="20.jpg">
-<div class="tag">250LT</div>
-<h4>Memories that matter </h4>
-</div>
-
-<div class="gallery-item">
-<video controls>
-<source src="C.mp4" type="video/mp4">
-</video>
-<div class="tag">FUNNY</div>
-<h4>Too much cruise </h4>
-</div>
-
-<div class="gallery-item">
-<img src="D.jpg">
-<div class="tag">WAWBEATS WITH THE  REPS</div>
-<h4>Leadership circle </h4>
-</div>
-
-<div class="gallery-item">
-<img src="50.jpg">
-<div class="tag">AURA</div>
-<h4>Confidence on 100 </h4>
-</div>
-
-<div class="gallery-item">
-<img src="81.png">
-<div class="tag">CAPACITY</div>
-<h4>Built different </h4>
+<h4>Game faces on</h4>
 </div>
 
 </div>
+
+<!-- FOOTER -->
 
 <div class="footer">
-Built with  by Osarumwense Omoruyi Kelvin | 2026
+Built with ❤️ by Omoruyi Kelvin Osarumwense | 2026
 </div>
 
+<!-- JAVASCRIPT -->
+
+<script>
+
+/* SEARCH */
+
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup", function(){
+
+let filter = searchInput.value.toLowerCase();
+
+let items = document.querySelectorAll(".gallery-item, .card");
+
+items.forEach(function(item){
+
+let text = item.innerText.toLowerCase();
+
+if(text.includes(filter)){
+item.style.display = "";
+}else{
+item.style.display = "none";
+}
+
+});
+
+});
+
+/* PHY */
+
+function showPHY(){
+alert(
+"PHY 102 PRACTICE QUESTIONS\n\n1. Define electric field.\n\n2. State Ohm’s Law.\n\n3. Calculate resistance when V=12V and I=3A.\n\n4. Explain wave motion."
+);
+}
+
+function showPHYNotes(){
+alert(
+"ELECTRIC CIRCUIT NOTES\n\nOhm’s Law:\nV = IR\n\nCurrent is measured in amperes.\nResistance opposes current flow."
+);
+}
+
+/* MTH */
+
+function showMTH(){
+alert(
+"MTH 102 PRACTICE QUESTIONS\n\n1. Differentiate x² + 4x.\n\n2. Integrate 3x².\n\n3. Define limit."
+);
+}
+
+function showMTHNotes(){
+alert(
+"DIFFERENTIATION GUIDE\n\nPower Rule:\nd/dx(xⁿ)=nxⁿ⁻¹"
+);
+}
+
+/* GST */
+
+function showGST(){
+alert(
+"GST 102 LIKELY QUESTIONS\n\n1. Define communication.\n\n2. Types of communication.\n\n3. Explain barriers to communication."
+);
+}
+
+function showGSTNotes(){
+alert(
+"ESSAY WRITING TIPS\n\nIntroduction\nBody\nConclusion\n\nAlways organize points clearly."
+);
+}
+
+/* CHM */
+
+function showCHM(){
+alert(
+"CHM 102 PRACTICE QUESTIONS\n\n1. Define covalent bond.\n\n2. Balance H2 + O2 → H2O"
+);
+}
+
+function showCHMNotes(){
+alert(
+"CHEMICAL BONDING NOTES\n\nIonic bond = transfer of electrons.\nCovalent bond = sharing of electrons."
+);
+}
+
+</script>
+
 </body>
-  </html>
+ </html>
